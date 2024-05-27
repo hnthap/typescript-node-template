@@ -14,3 +14,7 @@ cd simple_nodejs_typescript_boilerplate
 npm i
 npm run start
 ```
+
+## License
+
+MIT License. *See more: [LICENSE](./LICENSE).*
