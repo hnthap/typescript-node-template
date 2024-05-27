@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "npm run build && node dist/src",
-    "build": "tsc --project tsconfig.json"
+    "build": "tsc --project tsconfig.json",
+    "test": "npm run build && node --test dist/tests"
   },
   "keywords": [],
   "author": "",
