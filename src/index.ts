@@ -1,3 +1,5 @@
+import { greet } from "./greet";
+
 (async () => {
-  console.log("hello");
+  console.log(greet());
 })();

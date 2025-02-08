@@ -1,19 +1,23 @@
 {
-  "name": "simple_nodejs_typescript_boilerplate",
+  "name": "typescript-node-template",
   "version": "1.0.0",
   "description": "",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
-    "start": "npm run build && node dist/src",
-    "build": "tsc --project tsconfig.json",
-    "test": "npm run build && node --test dist/tests"
+    "start": "node dist/src/",
+    "build": "tsc",
+    "test": "npm run build && node --test dist/tests/*",
+    "type-dev": "tsc --watch",
+    "node-dev": "node --watch dist/src/",
+    "dev": "concurrently -c auto npm:type-dev npm:node-dev --kill-others"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.12.12",
+    "concurrently": "^9.1.0",
     "typescript": "^5.4.5"
   }
 }

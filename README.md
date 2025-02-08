@@ -1,18 +1,23 @@
-# Simple NodeJS TypeScript Boilerplate
-
-I made this repository for convenience.
+# TypeScript NodeJS Template
 
 ## Prerequisites
 
-NodeJS and its default package manager, NPM.
+* NodeJS and its default package manager, NPM.
+* Internet connection to download and install packages.
 
 ## Usage
 
 ```{bash}
-git clone https://github.com/hnthap/simple_nodejs_typescript_boilerplate.git
-cd simple_nodejs_typescript_boilerplate
-npm i
+# To setup
+npm install
+
+# To run
+npm run build
 npm run start
+
+# Dev mode
+npm run build
+npm run dev
 ```
 
 ## License
